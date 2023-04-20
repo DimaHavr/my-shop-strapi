@@ -37,6 +37,12 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "sub_categories"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "popular"
+      ]
     }
   }
 }
