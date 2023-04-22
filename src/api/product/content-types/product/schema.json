@@ -54,6 +54,13 @@
         "sale",
         "new"
       ]
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
