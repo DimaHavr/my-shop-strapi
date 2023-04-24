@@ -43,6 +43,10 @@
       "enum": [
         "popular"
       ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
