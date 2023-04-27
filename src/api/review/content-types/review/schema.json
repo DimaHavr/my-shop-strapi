@@ -23,6 +23,9 @@
     },
     "text": {
       "type": "richtext"
+    },
+    "qqq": {
+      "type": "string"
     }
   }
 }
