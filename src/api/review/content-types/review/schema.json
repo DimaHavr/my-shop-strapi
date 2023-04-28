@@ -15,9 +15,6 @@
     "name": {
       "type": "string"
     },
-    "product_id": {
-      "type": "string"
-    },
     "email": {
       "type": "email"
     },
@@ -29,9 +26,9 @@
     },
     "product": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::product.product",
-      "inversedBy": "review"
+      "inversedBy": "reviews"
     }
   }
 }
