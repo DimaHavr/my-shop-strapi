@@ -4,7 +4,7 @@
   "info": {
     "singularName": "review",
     "pluralName": "reviews",
-    "displayName": "order",
+    "displayName": "Review",
     "description": ""
   },
   "options": {
@@ -15,17 +15,23 @@
     "name": {
       "type": "string"
     },
-    "stripe_id": {
+    "product_id": {
       "type": "string"
     },
-    "products": {
-      "type": "json"
+    "email": {
+      "type": "email"
     },
-    "text": {
+    "commet": {
       "type": "richtext"
     },
-    "qqq": {
-      "type": "string"
+    "rating": {
+      "type": "integer"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product",
+      "inversedBy": "review"
     }
   }
 }
