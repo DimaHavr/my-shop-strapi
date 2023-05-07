@@ -30,10 +30,6 @@
       "type": "text",
       "required": true
     },
-    "isNew": {
-      "type": "boolean",
-      "default": false
-    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
@@ -56,11 +52,12 @@
       ]
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "colors": {
       "type": "relation",
@@ -79,6 +76,11 @@
       "relation": "oneToMany",
       "target": "api::review.review",
       "mappedBy": "product"
+    },
+    "discount": {
+      "type": "integer",
+      "max": 50,
+      "min": 10
     }
   }
 }
