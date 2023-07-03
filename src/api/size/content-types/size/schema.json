@@ -12,17 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "quantity": {
-      "type": "integer"
-    },
     "products": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "sizes"
+    },
+    "size": {
+      "type": "string"
     }
   }
 }
