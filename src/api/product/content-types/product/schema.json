@@ -82,14 +82,14 @@
       "max": 50,
       "min": 10
     },
-    "features": {
-      "type": "json"
-    },
     "article": {
       "type": "string"
     },
     "site_name": {
       "type": "string"
+    },
+    "features": {
+      "type": "text"
     }
   }
 }
