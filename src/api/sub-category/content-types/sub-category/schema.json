@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "img": {
       "type": "media",
       "multiple": false,
@@ -45,8 +42,13 @@
       ]
     },
     "slug": {
-      "type": "uid",
-      "targetField": "title"
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }
