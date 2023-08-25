@@ -42,7 +42,8 @@
       ]
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title"
     },
     "name": {
       "type": "string"
